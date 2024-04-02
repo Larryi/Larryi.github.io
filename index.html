@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,13 +8,11 @@
     <meta name="referrer" content="no-referrer">
     <link rel="icon" href="/assets/img/logo.webp" type="image/*" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css" rel="stylesheet" type="text/css">
-    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.7.0/es/highlight.min.js" rel="stylesheet" type="text/css">
+    <link href="assets/css/APlayer.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/highlight.github.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
-    <title>Memos</title>
-    <link rel="preconnect" href="https://fonts.loli.net">
-    <link rel="preconnect" href="https://gstatic.loli.net" crossorigin>
-    <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <title>Memos Top</title>
+
 </head>
 
 <body>
@@ -24,6 +22,7 @@
 
             <div class="pages">
                     <a href="https://github.com/eallion/memos.top" target="_blank" rel="noopener noreferrer" class="">GitHub</a>
+                    <a href="https://eallion.com/memos" target="_blank" rel="noopener noreferrer" class="">I'm Feeling Lucky</a>
             </div>
 
         </div>
@@ -33,13 +32,13 @@
     </header>
 
     <section id="main" class="container">
-        <h1>Memos</h1>
+        <h1>Memos Top</h1>
 
         <blockquote>
-            <p></p>
+            <p>Je <del>memos</del>, donc je suis - <em>René Descartes fans</em></p>
         </blockquote>
 
-        <div class="total">总计 <span id="total">0</span> 个 Memos 🎉</div>
+        <div class="total">Total <span id="total">0</span> Memos 🎉</div>
 
         <blockquote id="tag-filter" class="filter">
             <div id="tags"></div>
@@ -64,24 +63,30 @@
     <!-- Your Memos API -->
     <script type="text/javascript">
         var memos = {
-            host: 'https://memos.lmemo.me/',  // Your Memos, with '/' end.
+            host: 'https://memos.lmemo.me/',  // Your Memos instance.
             limit: '10',  // Pagination to show.
             creatorId: '1',  // The old instance is 101, and the new instance is 1. 
             domId: '#memos',  // Default #memos.
-            username: 'memos',  // You can customize the display ID that is not related to memos.
+            username: 'Larry',  // You can customize the display ID that is not related to memos.
             name: 'L',  // You can customize the displayed full name, that is not related to memos.
         }
 
     </script>
-    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.8.3/lazyload.min.js"></script>
-    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/marked/4.3.0/marked.min.js"></script>
-    <script type="text/javascript" src="assets/js/view-image.min.js"></script>
+    <script type="text/javascript" src="assets/js/lazyload.min.js?v=17.8.3"></script>
+    <script type="text/javascript" src="assets/js/marked.min.js?v=11.1.1"></script>
+    
+    <script type="text/javascript" src="assets/js/view-image.min.js?v=2.0.2"></script>
+
+    <!-- for CJK language auto-spacing -->
     <!-- <script type="text/javascript" src="assets/js/pangu.min.js?v=4.0.7"></script> -->
-    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/moment.min.js?v=2.30.1"></script>
     <script type="text/javascript" src="assets/js/moment.twitter.js"></script>
-    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css"></script>
-    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/meting/2.0.1/Meting.min.js"></script>
-    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.7.0/es/highlight.min.js"></script>
+
+    <!-- <script type="text/javascript" src="assets/js/APlayer.min.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/js/Meting.min.js"></script> -->
+
+    <script type="text/javascript" src="assets/js/highlight.min.js?v=11.9.0"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
     <script>hljs.highlightAll();</script>
